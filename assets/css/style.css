@@ -155,6 +155,28 @@ h2{
      
 }
 
+    
+
+    @keyframes aparecer{
+        0%{
+        opacity: 0;
+        }
+        100%{
+        opacity: 1;
+       
+        }
+    }
+        @keyframes shadow{
+            100%{
+            shadow: 1;
+            }
+            0%{
+            shadow: 0;
+            text-shadow: 0 0 72px black; 
+            color: transparent; 
+            }
+           }
+
 .tituloIndex{
     width: 100%;
     display: flex;
@@ -165,7 +187,10 @@ h2{
     font-size: 100px;
     color:rgba(248,165,2,255);
   
+    animation-name: aparecer;
+    animation-duration: 5s;
     
+ 
 }
 
 
@@ -178,6 +203,8 @@ h2{
     font-size: 30px;
     text-decoration: none;
     color:rgba(248,165,2,255);
+    animation-name: shadow;
+    animation-duration: 10s;
       
 }
  
